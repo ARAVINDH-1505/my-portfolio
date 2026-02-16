@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of S. Srinivasa Aravindh, Machine Learning Engineer & Researcher.">
+    <title>S. Srinivasa Aravindh | ML Engineer & Researcher</title>
+
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">S. Srinivasa Aravindh<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <canvas id="hero-canvas" class="section-canvas"></canvas>
+
+        <div class="container hero-content text-center">
+            <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 0.5rem;">S. Srinivasa Aravindh</h1>
+            <h2 class="hero-role" style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-primary);">Machine
+                Learning Engineer & Researcher</h2>
+            <p class="hero-description text-center"
+                style="color: var(--text-secondary); font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem auto;">
+                Designing robust, reproducible machine learning systems—from research to production.
+            </p>
+            <div class="hero-buttons center-buttons" style="display: flex; justify-content: center; gap: 1rem;">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="https://github.com/ARAVINDH-1505" target="_blank" class="btn btn-secondary"
+                    aria-label="GitHub">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/srinivasa-aravindh-s-6442b3284" target="_blank"
+                    class="btn btn-secondary" aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+                <a href="AR-Resume_2026.pdf" target="_blank" class="btn btn-outline">View CV</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <canvas id="about-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3 class="about-greeting">HEY, I’M ARAVINDH <span class="wave">👋</span></h3>
+                        <p>
+                            I’m a Machine Learning Engineer in the making, building intelligent systems with Python and
+                            a strong focus on how problems can be modeled—whether as classification or continuous
+                            prediction tasks.
+                        </p>
+                        <p>
+                            I enjoy blending algorithms, curiosity, and experimentation to solve real-world problems. My
+                            work spans applied machine learning, computer vision, explainable AI, and reinforcement
+                            learning. If my GitHub feels like a lab, that’s intentional—constant iteration is how real
+                            learning happens.
+                        </p>
+                        <p>
+                            I build models that don’t just run, but learn, adapt, and improve through thoughtful design
+                            and evaluation. I care deeply about why a model works, not just whether it works.
+                        </p>
+                        <p>
+                            Outside the code, I enjoy explaining machine learning concepts in Tamil when needed, making
+                            complex ideas more accessible.
+                        </p>
+                        <p class="about-punchline">
+                            <strong>If it’s not learning, it’s not fun.</strong>
+                        </p>
+
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Conference Papers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Research Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details-card">
+                        <h3>Profile</h3>
+                        <ul class="details-list">
+                            <li><strong>Current Role:</strong> ML Research Analyst</li>
+                            <li><strong>Focus:</strong> Applied AI, Research, XAI</li>
+                            <li><strong>Location:</strong> Coimbatore, India</li>
+                            <li><strong>Education:</strong> B.Tech AI & ML (CGPA: 8.21)</li>
+                            <li><strong>Languages:</strong> Python, C, SQL, Java(Basic)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-secondary">
+            <canvas id="skills-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3>Deep Learning & AI</h3>
+                            <span class="skill-icon">🧠</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li data-percent="92">CNN Architectures</li>
+                            <li data-percent="88">Deep Q-Networks (DQN)</li>
+                            <li data-percent="85">Transfer Learning</li>
+                            <li data-percent="90">Federated Learning</li>
+                            <li data-percent="89">BERT & LLM Finetuning</li>
+                            <li data-percent="93">Prompt Engineering</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3>Advanced ML</h3>
+                            <span class="skill-icon">🔮</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li data-percent="85">Bayesian Optimization</li>
+                            <li data-percent="92">Explainable AI (SHAP, LIME)</li>
+                            <li data-percent="90">Feature Engineering</li>
+                            <li data-percent="88">Ablation Studies</li>
+                            <li data-percent="87">Ensemble Methods</li>
+                            <li data-percent="89">Model Robustness</li>
+                        </ul>
+                        <div class="hover-reveal-card">
+                            <div class="reveal-icon">💡</div>
+                            <div class="reveal-text">Explainable AI</div>
+                            <div class="reveal-bar-container">
+                                <div class="reveal-bar" style="width: 92%"></div>
+                            </div>
+                            <div class="reveal-percent">92%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3>Computer Vision & NLP</h3>
+                            <span class="skill-icon">👁️</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li data-percent="88">Medical Image Analysis</li>
+                            <li data-percent="85">Dermoscopic Imaging</li>
+                            <li data-percent="90">OpenCV</li>
+                            <li data-percent="87">Text Classification</li>
+                            <li data-percent="89">Transformers</li>
+                            <li data-percent="91">Object Detection</li>
+                        </ul>
+                        <div class="hover-reveal-card">
+                            <div class="reveal-icon">🖼️</div>
+                            <div class="reveal-text">Computer Vision</div>
+                            <div class="reveal-bar-container">
+                                <div class="reveal-bar" style="width: 91%"></div>
+                            </div>
+                            <div class="reveal-percent">91%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3>Deployment & MLOps</h3>
+                            <span class="skill-icon">🚀</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li data-percent="90">REST APIs (FastAPI/Flask)</li>
+                            <li data-percent="85">Docker (Basics)</li>
+                            <li data-percent="80">MLflow</li>
+                            <li data-percent="92">Git & GitHub</li>
+                            <li data-percent="85">Linux Environments</li>
+                        </ul>
+                        <div class="hover-reveal-card">
+                            <div class="reveal-icon">⚙️</div>
+                            <div class="reveal-text">Deployment APIs</div>
+                            <div class="reveal-bar-container">
+                                <div class="reveal-bar" style="width: 90%"></div>
+                            </div>
+                            <div class="reveal-percent">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h3>Core Libraries</h3>
+                            <span class="skill-icon">📚</span>
+                        </div>
+                        <ul class="skill-list">
+                            <li data-percent="95">PyTorch, TensorFlow</li>
+                            <li data-percent="93">Scikit-learn, Pandas</li>
+                            <li data-percent="88">Hugging Face</li>
+                            <li data-percent="90">Streamlit</li>
+                            <li data-percent="91">Matplotlib / Seaborn</li>
+                        </ul>
+                        <!-- Hidden Hover Card for Visual Effect -->
+                        <div class="hover-reveal-card">
+                            <div class="reveal-icon">🔥</div>
+                            <div class="reveal-text">TensorFlow / PyTorch</div>
+                            <div class="reveal-bar-container">
+                                <div class="reveal-bar" style="width: 93%"></div>
+                            </div>
+                            <div class="reveal-percent">93%</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <canvas id="experience-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2024 – Present</div>
+                        <div class="timeline-content">
+                            <h3>Machine Learning Research Analyst</h3>
+                            <h4>Data Conquest Research Hub, Coimbatore</h4>
+                            <ul class="job-description">
+                                <li>Designed and implemented end-to-end ML pipelines for healthcare imaging and
+                                    cybersecurity datasets.</li>
+                                <li>Applied explainable AI techniques (SHAP, LIME) for model interpretability and
+                                    failure analysis to ensure transparency in high-stakes decisions.</li>
+                                <li>Conducted rigorous feature engineering, ablation studies, and Bayesian
+                                    hyperparameter optimization to maximize model performance.</li>
+                                <li>Evaluated models using precision, recall, F1-score, ROC-AUC, and threshold tuning,
+                                    handling class imbalance effectively.</li>
+                                <li>Maintained reproducible research workflows and produced publication-ready
+                                    documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-secondary">
+            <canvas id="projects-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Key Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- 1. Skin Cancer Prediction -->
+                    <div class="project-card" data-project="skin-cancer">
+                        <img src="assets/xai.gif" alt="Skin Cancer Prediction Demo" class="project-gif">
+                        <h3>Skin Cancer Prediction using Explainable AI</h3>
+                        <span class="project-timeline">Oct 2024 – Dec 2024</span>
+                    </div>
+
+                    <!-- 2. Malware Detection -->
+                    <div class="project-card" data-project="malware">
+                        <img src="assets/mal.gif" alt="Malware Detection Demo" class="project-gif">
+                        <h3>Malware Detection via Dynamic Algorithmic Configuration</h3>
+                        <span class="project-timeline">Jan 2025 – Apr 2025</span>
+                    </div>
+
+                    <!-- 3. IPL Match Outcome -->
+                    <div class="project-card" data-project="ipl">
+                        <img src="assets/ipl.gif" alt="IPL Forecasting Demo" class="project-gif">
+                        <h3>IPL Match Outcome & Performance Forecasting</h3>
+                        <span class="project-timeline">May 2025</span>
+                    </div>
+
+                    <!-- 4. Tic Tac Toe (RL) -->
+                    <div class="project-card" data-project="tictactoe">
+                        <img src="assets/tic.gif" alt="Tic Tac Toe RL Demo" class="project-gif">
+                        <h3>Reinforcement Learning: Tic Tac Toe Agent (DQN)</h3>
+                        <span class="project-timeline">Jun 2025</span>
+                    </div>
+
+                    <!-- 5. CAPTCHA Recognition -->
+                    <div class="project-card" data-project="captcha">
+                        <img src="assets/captcha.gif" alt="CAPTCHA Recognition Demo" class="project-gif">
+                        <h3>CAPTCHA Recognition System</h3>
+                        <span class="project-timeline">Jul 2025</span>
+                    </div>
+
+                    <!-- 6. House Price Prediction -->
+                    <div class="project-card" data-project="house">
+                        <img src="assets/house.gif" alt="House Price Prediction Demo" class="project-gif">
+                        <h3>House Price Prediction API</h3>
+                        <span class="project-timeline">Aug 2025</span>
+                    </div>
+
+                    <!-- 7. Spotify Analytics -->
+                    <div class="project-card" data-project="spotify">
+                        <img src="assets/spotify.gif" alt="Spotify Analytics Demo" class="project-gif">
+                        <h3>Spotify Analytics Dashboard</h3>
+                        <span class="project-timeline">Sep 2025</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <canvas id="achievements-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Achievements & Engagements</h2>
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🏆</span>
+                        <div class="achievement-content">
+                            <h4>Paper Published via IEEE IDCIoT 2025</h4>
+                            <p>Malware Detection via Algorithmic Configuration</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">📝</span>
+                        <div class="achievement-content">
+                            <h4>Paper Published in National Conference</h4>
+                            <p>Skin Cancer Prediction using Explainable AI</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🎤</span>
+                        <div class="achievement-content">
+                            <h4>Speaker at Google DevFest 2023</h4>
+                            <p>Delivered a talk on Machine Learning at Madurai.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🧩</span>
+                        <div class="achievement-content">
+                            <h4>Competitive Programming</h4>
+                            <p>Solved 90+ LeetCode problems & 728 Skillrack challenges.</p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🤝</span>
+                        <div class="achievement-content">
+                            <h4>Co-organiser: ARTIFEST 2023</h4>
+                            <p>AI Symposium at MKCE.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section bg-secondary">
+            <canvas id="education-canvas" class="section-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="education-grid">
+
+                    <div class="edu-card">
+                        <h3>B.Tech - Artificial Intelligence & Data Science</h3>
+                        <h4>M. Kumarasamy College of Engineering | 2021 – 2025</h4>
+                        <p class="cgpa">CGPA: <span class="accent">8.21</span></p>
+                    </div>
+
+                    <div class="cert-card">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Google Cloud Associate Cloud Engineer</li>
+                            <li>AWS Cloud Fundamentals</li>
+                            <li>Oracle Cloud Infrastructure AI Foundations Associate</li>
+                            <li>Data Analytics with Python (NPTEL)</li>
+                            <li>Machine Learning (ICT Learnathon)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section" style="position: relative;">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <p>
+                            Interested in collaborating on research, AI development, or discussing widespread ML
+                            adoption?
+                            Feel free to reach out.
+                        </p>
+                        <div class="contact-links">
+                            <a href="mailto:srinivasaaravindh15@gmail.com" class="contact-link">
+                                srinivasaaravindh15@gmail.com
+                            </a>
+                            <a href="tel:+916380804359" class="contact-link">
+                                +91 6380804359
+                            </a>
+                            <a href="https://linkedin.com/in/srinivasa-aravindh-s-6442b3284" target="_blank"
+                                class="contact-link">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 1234567890">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="How can we collaborate?"></textarea>
+                        </div>
+                        <div id="form-message"></div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+                <div id="modal-body">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
