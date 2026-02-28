@@ -353,24 +353,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const formData = new FormData(contactForm);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: formData.get('phone') || null,
-                message: formData.get('message')
-            };
 
             try {
-                // Use relative path for API
-                const response = await fetch('/api/contact', {
+                // Submit directly to Netlify form endpoint
+                const response = await fetch('/', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data)
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(formData).toString()
                 });
-
-                const result = await response.json();
 
                 if (response.ok) {
                     // Success
@@ -380,9 +370,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     contactForm.reset();
                 } else {
-                    // Error (Rate limit or other)
+                    // Error
                     if (formMessage) {
-                        formMessage.textContent = result.detail || 'Failed to send message. Please try again.';
+                        formMessage.textContent = 'Failed to send message. Please try again.';
                         formMessage.className = 'error';
                     }
                 }
