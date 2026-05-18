@@ -85,6 +85,22 @@ class DynamicBackground {
 
 // Project Data
 const projectData = {
+    'rag-mistral': {
+        title: 'RAG with Local Mistral (Ollama + LangChain)',
+        timeline: 'Jan 2026',
+        gif: 'assets/RAG.gif',
+        description: [
+            'Fully offline RAG system using local Mistral (Ollama)',
+            'Automatic document ingestion and semantic chunking',
+            'FastAPI server via uvicorn for query handling'
+        ],
+        highlights: [
+            'No external services or internet access needed',
+            'Created local vector store for top-K similarity retrieval',
+            'Generated grounded answers backed by source documents'
+        ],
+        tools: ['Python', 'LangChain', 'Ollama', 'Mistral LLM', 'FastAPI', 'Vector Store']
+    },
     'skin-cancer': {
         title: 'Skin Cancer Prediction using Explainable AI',
         timeline: 'Oct 2024 – Dec 2024',
