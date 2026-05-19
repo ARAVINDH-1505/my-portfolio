@@ -85,6 +85,22 @@ class DynamicBackground {
 
 // Project Data
 const projectData = {
+    'mcp-db': {
+        title: 'MCP Database Assistant — Ollama Mistral + MySQL',
+        timeline: 'Feb 2026',
+        gif: 'assets/MCP.gif',
+        description: [
+            'Engineered a local AI agent that translates natural language commands into structured database operations via the Model Context Protocol.',
+            'Uses a locally hosted Mistral model to parse intent and output structured CMD directives, routed through an MCP client–server bridge to execute MySQL queries.',
+            'Cleanly separates LLM logic, tool routing, and database access into three layers.'
+        ],
+        highlights: [
+            '100% offline support using Mistral (via Ollama) with optional Anthropic, OpenAI, and Gemini backends.',
+            'Built a FastMCP server exposing 3 database tools for MySQL CRUD operations.',
+            'Implemented multi-client orchestrator and regex-based command parser via full stdin/stdout subprocess pipe architecture.'
+        ],
+        tools: ['Python', 'Ollama/Mistral', 'MCP / FastMCP', 'MySQL', 'LLM SDKs']
+    },
     'rag-mistral': {
         title: 'RAG with Local Mistral (Ollama + LangChain)',
         timeline: 'Jan 2026',
