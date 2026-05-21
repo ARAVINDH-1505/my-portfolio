@@ -85,6 +85,22 @@ class DynamicBackground {
 
 // Project Data
 const projectData = {
+    'federated-mnist': {
+        title: 'Federated Learning with MNIST',
+        timeline: 'Mar 2026',
+        gif: 'assets/FD pro.gif',
+        description: [
+            'Implemented a complete federated learning system demonstrating privacy-preserving distributed model training on the MNIST dataset.',
+            'Multiple client instances locally train a feedforward neural network on unequal, non-IID data distributions simulating real-world heterogeneous devices.',
+            'Model weights (not raw pixel data) are transmitted to a central Flower server, aggregating updates to yield an improved global model.'
+        ],
+        highlights: [
+            'Preserved data privacy by ensuring raw data never leaves the client.',
+            'Tracked per-client metrics including Accuracy, Precision, Recall, F1-Score, and full Confusion Matrices.',
+            'Engineered custom non-IID data distribution and multi-terminal client startup.'
+        ],
+        tools: ['Python', 'PyTorch', 'Flower (flwr)', 'Scikit-learn', 'torchvision', 'SGD Optimizer']
+    },
     'mcp-db': {
         title: 'MCP Database Assistant — Ollama Mistral + MySQL',
         timeline: 'Feb 2026',
