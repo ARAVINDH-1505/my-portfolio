@@ -85,6 +85,23 @@ class DynamicBackground {
 
 // Project Data
 const projectData = {
+    'whatsapp-ecommerce': {
+        title: 'WhatsApp Real-Time E-Commerce System 🟢 Live',
+        timeline: 'Apr 2026',
+        gif: 'assets/whatsapp.gif',
+        description: [
+            'Designed and deployed a full-stack commercial e-commerce solution that operates entirely within WhatsApp for a real retail business.',
+            'Customers interact through a state-machine-driven chatbot that tracks their session in MongoDB — managing a persistent cart with dynamic total calculations.',
+            'FastAPI webhook processes incoming Twilio messages, and orders instantly appear on a Streamlit admin dashboard for real-time fulfillment management.',
+            'Each order status change automatically triggers a Twilio outbound WhatsApp message, keeping the customer informed in real time.'
+        ],
+        highlights: [
+            'Built a production-ready, highly concurrent state-machine conversation engine.',
+            'Integrated MongoDB Atlas for persistent carts and Streamlit for real-time live admin dashboards.',
+            'Successfully deployed on Render with an automated GitHub Actions CI/CD pipeline.'
+        ],
+        tools: ['Python', 'FastAPI', 'MongoDB', 'Twilio API', 'Streamlit', 'Render', 'GitHub Actions']
+    },
     'federated-mnist': {
         title: 'Federated Learning with MNIST',
         timeline: 'Mar 2026',
